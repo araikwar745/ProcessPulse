@@ -3,6 +3,7 @@
 **Name:** Ashish Raikwar  
 **Student ID:** B24CS010  
 **Course:** Operating Systems (OS)  
+**GitHub Repository:** [https://github.com/araikwar745/ProcessPulse](https://github.com/araikwar745/ProcessPulse)  
 
 A practical, hands-on Operating Systems project written in C (C11). It demonstrates real Linux process-management mechanisms rather than only simulating them in memory.
 

@@ -6,6 +6,7 @@
 **Student ID:** B24CS010  
 **Department:** Computer Science & Engineering  
 **Subject:** Operating Systems  
+**GitHub Repository:** [https://github.com/araikwar745/ProcessPulse](https://github.com/araikwar745/ProcessPulse)  
 
 ---
 
