@@ -1,0 +1,134 @@
+
+==============================================
+       ProcessPulse - Linux Process Manager
+==============================================
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: 
+--- ProcessPulse: managed processes ---
+No active managed processes. Create one using option 1.
+---------------------------------------
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: Created child process successfully. PID = 662
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: [child 662] Started. Waiting for parent messages...
+Created child process successfully. PID = 663
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: [child 663] Started. Waiting for parent messages...
+
+--- ProcessPulse: managed processes ---
+PID: 662     Name:processpulse | State:S (sleeping) | RSS:948 kB | Threads:1
+PID: 663     Name:processpulse | State:S (sleeping) | RSS:948 kB | Threads:1
+---------------------------------------
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: Enter PID: Message (max 200 characters): Message sent to child through an IPC pipe.
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: [child 662] IPC message received: Hello from Parent via IPC Pipe!
+Enter PID: Sent SIGSTOP signal to PID 662.
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: 
+--- ProcessPulse: managed processes ---
+PID: 662     Name:processpulse | State:T (stopped) | RSS:948 kB | Threads:1
+PID: 663     Name:processpulse | State:S (sleeping) | RSS:948 kB | Threads:1
+---------------------------------------
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: Enter PID: Sent SIGCONT signal to PID 662.
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: 
+--- ProcessPulse: managed processes ---
+PID: 662     Name:processpulse | State:S (sleeping) | RSS:948 kB | Threads:1
+PID: 663     Name:processpulse | State:S (sleeping) | RSS:948 kB | Threads:1
+---------------------------------------
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: Enter PID: Sent SIGTERM signal to PID 663.
+PID 663 terminated and reaped.
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: 
+--- ProcessPulse: managed processes ---
+PID: 662     Name:processpulse | State:S (sleeping) | RSS:948 kB | Threads:1
+---------------------------------------
+
+1. Create worker process (fork)
+2. List and monitor managed processes (/proc)
+3. Pause a process (SIGSTOP)
+4. Resume a process (SIGCONT)
+5. Terminate a process (SIGTERM + waitpid)
+6. Send IPC message to a process (pipe)
+0. Exit
+Select an option: All managed children cleaned up. Goodbye!
